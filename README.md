@@ -1,0 +1,1 @@
+# eclipse-bug-536592
