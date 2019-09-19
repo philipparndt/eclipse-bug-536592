@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Consumer
+Bundle-SymbolicName: some.consumer
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: some.consumer
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Service-Component: OSGI-INF/some.consumer.impl.HelloServiceConsumer.xml
+Bundle-ActivationPolicy: lazy
+Export-Package: some.consumer.api
+Import-Package: org.osgi.service.component.annotations;version="1.3.0"
+Require-Capability: 
+ osgi.extender;filter:="(&(osgi.extender=osgi.component)(version>=1.3.0)
+ (!(version>=2.0.0)))",
+ osgi.service;filter:="(objectClass=some.consumer.api.HelloService)";eff
+ ective:=active;resolution:=optional;cardinality:=multiple
