@@ -1,6 +1,6 @@
 # eclipse-bug-536592
 
-This in an example with two projects that are containing a:
+In this example there are two projects that containing a:
 runtime dependency from `some.consumer` to `some.provider`
 
 and a
