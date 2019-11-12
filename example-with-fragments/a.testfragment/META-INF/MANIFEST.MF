@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Testfragment
+Bundle-SymbolicName: a.testfragment
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: a;bundle-version="1.0.0"
+Automatic-Module-Name: a.testfragment
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: testsupport
