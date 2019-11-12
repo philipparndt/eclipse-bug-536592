@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="example.impl.a.ServiceA1Impl">
+   <service>
+      <provide interface="example.api.ServiceA1"/>
+   </service>
+   <reference bind="setServiceB1" interface="example.api.ServiceB1" name="ServiceB1"/>
+   <implementation class="example.impl.a.ServiceA1Impl"/>
+</scr:component>

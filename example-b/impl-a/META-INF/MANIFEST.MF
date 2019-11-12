@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: A
+Bundle-SymbolicName: impl-a
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: a
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: example.api,
+ org.osgi.service.component.annotations;version="1.3.0"
+Service-Component: OSGI-INF/example.impl.a.ServiceA2Impl.xml,
+ OSGI-INF/example.impl.a.ServiceA1Impl.xml
+Bundle-ActivationPolicy: lazy
